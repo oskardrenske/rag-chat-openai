@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+langchain-community
+docarray
+loguru
+ruff
+openai
+sentence-transformers
+langchain-chroma
+requests
+xmltodict
