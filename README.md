@@ -11,12 +11,13 @@ I made it to learn more about RAG and used sample data I had written myself to b
 - Python 3.12 (not tested on earlier versions)
 - An OpenAI API key
 - Your data in a single text file
+- UV installed https://github.com/astral-sh/uv
 
 # Data storage
 Your data is stored in a Chroma vector database on your file system (location controlled by environment variable in settings.py)
 
 # Setup
-- Create a virtual environment and install dependencies from requirements.txt  
+- Use UV to create a virtual environment and install dependencies (https://github.com/astral-sh/uv)
 - Add your OpenAI API key as an environment variable. `export OPENAI_API_KEY=YOUR_API_KEY` (or `set`instead of `export`on Windows.) The OpenAI API key is the only required environment variable, everything else has default values.
 - Prepare your data into a single text file and run `python src/load_vector_db.py <file_name>`
 - If you use the sample data, the command is: `python src/load_vector_db.py sample_data/sample_data.txt` A directory is created where the database is stored
@@ -47,7 +48,7 @@ In addition to questions and answers, some more data is saved (model, temperatur
 
 # Reset
 Stop the program and delete the database folder and its contents. 
-load data into a new databse, as described in setup.
+load data into a new database, as described in setup.
 
 # License
 MIT License, see the file `LICENSE`
